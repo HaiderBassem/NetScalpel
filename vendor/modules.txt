@@ -1,0 +1,58 @@
+# github.com/BurntSushi/toml v1.4.1-0.20240526193622-a339e1f7089c
+## explicit; go 1.18
+# github.com/bitly/go-simplejson v0.5.1
+## explicit; go 1.17
+github.com/bitly/go-simplejson
+# github.com/dlclark/regexp2 v1.11.5
+## explicit; go 1.13
+github.com/dlclark/regexp2
+github.com/dlclark/regexp2/syntax
+# github.com/dop251/goja v0.0.0-20260311135729-065cd970411c
+## explicit; go 1.20
+github.com/dop251/goja
+github.com/dop251/goja/ast
+github.com/dop251/goja/file
+github.com/dop251/goja/ftoa
+github.com/dop251/goja/ftoa/internal/fast
+github.com/dop251/goja/parser
+github.com/dop251/goja/token
+github.com/dop251/goja/unistring
+# github.com/go-sourcemap/sourcemap v2.1.4+incompatible
+## explicit
+github.com/go-sourcemap/sourcemap
+github.com/go-sourcemap/sourcemap/internal/base64vlq
+# github.com/google/pprof v0.0.0-20260302011040-a15ffb7f9dcc
+## explicit; go 1.24.0
+github.com/google/pprof/profile
+# github.com/kkdai/youtube/v2 v2.10.6
+## explicit; go 1.26
+github.com/kkdai/youtube/v2
+# golang.org/x/crypto v0.52.0
+## explicit; go 1.25.0
+golang.org/x/crypto/blowfish
+golang.org/x/crypto/chacha20
+golang.org/x/crypto/curve25519
+golang.org/x/crypto/internal/alias
+golang.org/x/crypto/internal/poly1305
+golang.org/x/crypto/ssh
+golang.org/x/crypto/ssh/internal/bcrypt_pbkdf
+# golang.org/x/sys v0.45.0
+## explicit; go 1.25.0
+golang.org/x/sys/cpu
+# golang.org/x/text v0.37.0
+## explicit; go 1.25.0
+golang.org/x/text/cases
+golang.org/x/text/collate
+golang.org/x/text/internal
+golang.org/x/text/internal/colltab
+golang.org/x/text/internal/language
+golang.org/x/text/internal/language/compact
+golang.org/x/text/internal/tag
+golang.org/x/text/language
+golang.org/x/text/transform
+golang.org/x/text/unicode/norm
+golang.org/x/text/unicode/rangetable
+# golang.org/x/tools v0.44.0
+## explicit; go 1.25.0
+# honnef.co/go/tools v0.7.0
+## explicit; go 1.25.0

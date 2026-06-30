@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-main: #f4f7f6;
+  --text-main: #333333;
+  --table-border: #e2e8f0;
+  
+  --color-date-bg: #d1fae5;
+  --color-date-text: #065f46;
+  
+  --color-province-bg: #a7f3d0;
+  --color-province-text: #064e3b;
+  
+  --color-profile-bg: #bfdbfe;
+  --color-profile-text: #1e3a8a;
+  
+  --color-row-hover: #f1f5f9;
+  --color-row-label: #f8fafc;
+  --color-white: #ffffff;
+  
+  --color-error: #ef4444;
+  --color-error-bg: #fef2f2;
+  --color-success: #16a34a;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: -0.025em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--table-border);
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.report-table th, 
+.report-table td {
+  padding: 0.85rem 0.75rem;
+  border: 1px solid var(--table-border);
+}
+
+/* Header Styles */
+.date-row th {
+  background-color: var(--color-date-bg);
+  color: var(--color-date-text);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 1.25rem;
+}
+
+.province-row th {
+  background-color: var(--color-province-bg);
+  color: var(--color-province-text);
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 1.25rem;
+}
+
+.profiles-row th {
+  background-color: var(--color-profile-bg);
+  color: var(--color-profile-text);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.profiles-row th.pkg-error {
+  background-color: #fecaca;
+  color: #991b1b;
+}
+
+.corner-header {
+  background-color: #93c5fd !important;
+  font-weight: 700 !important;
+}
+
+/* Connection badge under package name */
+.conn-badge {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* Body Styles */
+.report-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.report-table tbody tr:hover {
+  background-color: var(--color-row-hover);
+}
+
+.report-table tbody td {
+  font-weight: 500;
+  color: #475569;
+}
+
+.cell-ok {
+  color: var(--color-success) !important;
+  font-weight: 600 !important;
+}
+
+.cell-error {
+  background-color: var(--color-error-bg) !important;
+}
+
+.check-it {
+  color: var(--color-error);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.row-label {
+  background-color: var(--color-row-label);
+  font-weight: 700 !important;
+  color: #334155 !important;
+  text-align: left;
+  padding-left: 1.5rem !important;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  margin-top: 3rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+/* Loading */
+.loading {
+  font-size: 1.25rem;
+  color: #64748b;
+  padding: 3rem;
+  text-align: center;
+  font-weight: 500;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  
+  .report-table th, 
+  .report-table td {
+    padding: 0.6rem 0.4rem;
+    font-size: 0.8rem;
+  }
+  
+  .date-row th,
+  .province-row th {
+    font-size: 1.25rem;
+  }
+}

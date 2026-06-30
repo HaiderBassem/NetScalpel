@@ -1,0 +1,17 @@
+[Unit]
+Description=NetScalpel Report UI - Instance 1 (Port 5173)
+After=network.target
+
+[Service]
+Type=simple
+# غير هذا المسار إلى المسار الفعلي للمشروع في سيرفر اللينكس الخاص بك
+WorkingDirectory=/var/www/NetScalpel/report-ui
+# مسار الـ npm في السيرفر (يمكنك معرفته بكتابة which npm)
+ExecStart=/usr/bin/npm run dev:1
+Restart=always
+RestartSec=3
+# تحديد مستخدم معين لتشغيل الخدمة (اختياري)
+# User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

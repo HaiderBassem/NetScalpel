@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-05-31T18:07:07+03:00",
+  "router_identity": "KUT-CHR-Test",
+  "total_duration_seconds": 851.9890518,
+  "packages": [
+    {
+      "package_name": "Social Test",
+      "interface_name": "1-social-test",
+      "order": 1,
+      "advertised_speed_mbps": 10,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 7.0808933,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": {
+          "status": "SUCCESS",
+          "peak_mbps": 51.765184,
+          "avg_mbps": 45.85387093333333
+        },
+        "facebook": {
+          "status": "SUCCESS",
+          "peak_mbps": 48.3672,
+          "avg_mbps": 46.72601371428572
+        },
+        "fast": {
+          "status": "SUCCESS",
+          "peak_mbps": 48.238616,
+          "avg_mbps": 43.72515542857143
+        },
+        "speedtest": {
+          "status": "FAILED",
+          "error": "speedtest failed"
+        },
+        "youtube": {
+          "status": "SUCCESS",
+          "peak_mbps": 50.573648,
+          "avg_mbps": 46.93902228571427
+        }
+      }
+    },
+    {
+      "package_name": "FiberX",
+      "interface_name": "2-Profile-FiberX",
+      "order": 2,
+      "advertised_speed_mbps": 50,
+      "connection": {
+        "status": "FAILED",
+        "time_to_connect_seconds": 120.2448466,
+        "error": "PPPoE timeout"
+      },
+      "tests": {
+        "download": { "status": "SKIPPED" },
+        "facebook": { "status": "SKIPPED" },
+        "fast": { "status": "SKIPPED" },
+        "speedtest": { "status": "SKIPPED" },
+        "youtube": { "status": "SKIPPED" }
+      }
+    },
+    {
+      "package_name": "Family",
+      "interface_name": "3-Profile-Family",
+      "order": 3,
+      "advertised_speed_mbps": 80,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 77.1714716,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": { "status": "SUCCESS", "avg_mbps": 71.96 },
+        "facebook": { "status": "SUCCESS", "avg_mbps": 74.27 },
+        "fast": { "status": "SUCCESS", "avg_mbps": 68.01 },
+        "speedtest": { "status": "FAILED" },
+        "youtube": { "status": "SUCCESS", "avg_mbps": 75.06 }
+      }
+    }
+  ]
+}

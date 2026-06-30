@@ -1,0 +1,120 @@
+{
+    "output_file": "results.json",
+    "mikrotik": {
+        "address": "10.80.6.13",
+        "port": 22,
+        "username": "admin",
+        "password": "m5bZwD5U@w2Jt#",
+        "connect_timeout_seconds": 10,
+        "cooldown_between_packages_seconds": 5
+    },
+    "packages": [
+        {
+            "name": "Social Test",
+            "interface_name": "1-social-test",
+            "order": 1,
+            "advertised_speed_mbps": 10,
+            "enabled": true
+        },
+        {
+            "name": "FiberX",
+            "interface_name": "2-Profile-FiberX",
+            "order": 2,
+            "advertised_speed_mbps": 50,
+            "enabled": true
+        },
+        {
+            "name": "Family",
+            "interface_name": "3-Profile-Family",
+            "order": 3,
+            "advertised_speed_mbps": 80,
+            "enabled": true
+        },
+        {
+            "name": "Hero",
+            "interface_name": "4-Profile-Hero",
+            "order": 4,
+            "advertised_speed_mbps": 120,
+            "enabled": true
+        },
+        {
+            "name": "Hero Plus",
+            "interface_name": "5-Profile-hero-plus",
+            "order": 5,
+            "advertised_speed_mbps": 160,
+            "enabled": true
+        },
+        {
+            "name": "Pasha 200",
+            "interface_name": "6-Profile - Pasha-200",
+            "order": 6,
+            "advertised_speed_mbps": 200,
+            "enabled": true
+        },
+        {
+            "name": "Pasha 300",
+            "interface_name": "7-Profile - Pasha-300",
+            "order": 7,
+            "advertised_speed_mbps": 300,
+            "enabled": true
+        },
+        {
+            "name": "Pasha 400",
+            "interface_name": "8-Profile - Pasha-400",
+            "order": 8,
+            "advertised_speed_mbps": 400,
+            "enabled": true
+        },
+        {
+            "name": "B to G",
+            "interface_name": "B to G",
+            "order": 9,
+            "advertised_speed_mbps": 20,
+            "enabled": true
+        },
+        {
+            "name": "Test Interface",
+            "interface_name": "Test",
+            "order": 10,
+            "advertised_speed_mbps": 10,
+            "enabled": false
+        }
+    ],
+    "probes": {
+        "youtube": {
+            "enabled": true,
+            "priority": 1,
+            "video_id": "LXb3EKWsInQ",
+            "connections": 128,
+            "duration_seconds": 15
+        },
+        "facebook": {
+            "enabled": true,
+            "priority": 2,
+            "video_url": "https://www.facebook.com/watch/?v=326565992014371",
+            "connections": 128,
+            "duration_seconds": 15
+        },
+        "fast": {
+            "enabled": true,
+            "priority": 3,
+            "connections": 8,
+            "duration_seconds": 15
+        },
+        "download": {
+            "enabled": true,
+            "priority": 4,
+            "target_urls": [
+                "https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso",
+                "https://proof.ovh.net/files/1Gb.dat"
+            ],
+            "connections": 64,
+            "duration_seconds": 15
+        },
+        "speedtest": {
+            "enabled": true,
+            "priority": 5,
+            "server_id": "62149"
+        }
+    }
+}

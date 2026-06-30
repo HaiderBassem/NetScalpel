@@ -1,0 +1,580 @@
+{
+  "timestamp": "2026-05-31T18:07:07+03:00",
+  "router_identity": "KUT-CHR-Test",
+  "total_duration_seconds": 851.9890518,
+  "packages": [
+    {
+      "package_name": "Social Test",
+      "interface_name": "1-social-test",
+      "order": 1,
+      "advertised_speed_mbps": 10,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 7.0808933,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": {
+          "status": "SUCCESS",
+          "peak_mbps": 51.765184,
+          "avg_mbps": 45.85387093333333,
+          "top_ips": [
+            {
+              "IP": "185.125.190.40",
+              "Bytes": 79921152
+            },
+            {
+              "IP": "141.95.207.211",
+              "Bytes": 6054856
+            }
+          ]
+        },
+        "facebook": {
+          "status": "SUCCESS",
+          "peak_mbps": 48.3672,
+          "avg_mbps": 46.72601371428572,
+          "top_ips": [
+            {
+              "IP": "185.124.151.18",
+              "Bytes": 87664519
+            }
+          ]
+        },
+        "fast": {
+          "status": "SUCCESS",
+          "peak_mbps": 48.238616,
+          "avg_mbps": 43.72515542857143,
+          "top_ips": [
+            {
+              "IP": "45.57.80.147",
+              "Bytes": 24052697
+            },
+            {
+              "IP": "45.57.81.137",
+              "Bytes": 19351807
+            },
+            {
+              "IP": "178.132.81.249",
+              "Bytes": 17427468
+            }
+          ]
+        },
+        "speedtest": {
+          "status": "FAILED",
+          "error": "speedtest failed: signal: segmentation fault (core dumped)"
+        },
+        "youtube": {
+          "status": "SUCCESS",
+          "peak_mbps": 50.573648,
+          "avg_mbps": 46.93902228571427,
+          "top_ips": [
+            {
+              "IP": "188.72.30.12",
+              "Bytes": 88185860
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package_name": "FiberX",
+      "interface_name": "2-Profile-FiberX",
+      "order": 2,
+      "advertised_speed_mbps": 50,
+      "connection": {
+        "status": "FAILED",
+        "time_to_connect_seconds": 120.2448466,
+        "error": "PPPoE timeout after 120s waiting for \"2-Profile-FiberX\" to connect — last log: 05:28:21 pppoe,ppp,info 2-Profile-FiberX: disconnected"
+      },
+      "tests": {
+        "download": {
+          "status": "SKIPPED",
+          "error": "PPPoE timeout after 120s waiting for \"2-Profile-FiberX\" to connect — last log: 05:28:21 pppoe,ppp,info 2-Profile-FiberX: disconnected"
+        },
+        "facebook": {
+          "status": "SKIPPED",
+          "error": "PPPoE timeout after 120s waiting for \"2-Profile-FiberX\" to connect — last log: 05:28:21 pppoe,ppp,info 2-Profile-FiberX: disconnected"
+        },
+        "fast": {
+          "status": "SKIPPED",
+          "error": "PPPoE timeout after 120s waiting for \"2-Profile-FiberX\" to connect — last log: 05:28:21 pppoe,ppp,info 2-Profile-FiberX: disconnected"
+        },
+        "speedtest": {
+          "status": "SKIPPED",
+          "error": "PPPoE timeout after 120s waiting for \"2-Profile-FiberX\" to connect — last log: 05:28:21 pppoe,ppp,info 2-Profile-FiberX: disconnected"
+        },
+        "youtube": {
+          "status": "SKIPPED",
+          "error": "PPPoE timeout after 120s waiting for \"2-Profile-FiberX\" to connect — last log: 05:28:21 pppoe,ppp,info 2-Profile-FiberX: disconnected"
+        }
+      }
+    },
+    {
+      "package_name": "Family",
+      "interface_name": "3-Profile-Family",
+      "order": 3,
+      "advertised_speed_mbps": 80,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 77.1714716,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": {
+          "status": "SUCCESS",
+          "peak_mbps": 83.478016,
+          "avg_mbps": 71.96434285714285,
+          "top_ips": [
+            {
+              "IP": "91.189.91.109",
+              "Bytes": 118221824
+            },
+            {
+              "IP": "141.95.207.211",
+              "Bytes": 14196672
+            }
+          ]
+        },
+        "facebook": {
+          "status": "SUCCESS",
+          "peak_mbps": 77.403552,
+          "avg_mbps": 74.27014986666667,
+          "top_ips": [
+            {
+              "IP": "185.124.151.18",
+              "Bytes": 139305683
+            }
+          ]
+        },
+        "fast": {
+          "status": "SUCCESS",
+          "peak_mbps": 76.67712,
+          "avg_mbps": 68.01321314285714,
+          "top_ips": [
+            {
+              "IP": "178.132.81.250",
+              "Bytes": 36087111
+            },
+            {
+              "IP": "45.57.80.131",
+              "Bytes": 31901671
+            },
+            {
+              "IP": "45.57.81.136",
+              "Bytes": 29703325
+            }
+          ]
+        },
+        "speedtest": {
+          "status": "FAILED",
+          "error": "speedtest failed: signal: segmentation fault (core dumped)"
+        },
+        "youtube": {
+          "status": "SUCCESS",
+          "peak_mbps": 79.058016,
+          "avg_mbps": 75.06385386666666,
+          "top_ips": [
+            {
+              "IP": "188.72.30.12",
+              "Bytes": 140793878
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package_name": "Hero",
+      "interface_name": "4-Profile-Hero",
+      "order": 4,
+      "advertised_speed_mbps": 120,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 7.0714976,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": {
+          "status": "SUCCESS",
+          "peak_mbps": 125.221376,
+          "avg_mbps": 106.38058057142857,
+          "top_ips": [
+            {
+              "IP": "91.189.91.108",
+              "Bytes": 180685824
+            },
+            {
+              "IP": "141.95.207.211",
+              "Bytes": 19390400
+            }
+          ]
+        },
+        "facebook": {
+          "status": "SUCCESS",
+          "peak_mbps": 114.657568,
+          "avg_mbps": 112.06834742857143,
+          "top_ips": [
+            {
+              "IP": "185.124.151.18",
+              "Bytes": 210342420
+            }
+          ]
+        },
+        "fast": {
+          "status": "SUCCESS",
+          "peak_mbps": 112.763688,
+          "avg_mbps": 93.07173314285713,
+          "top_ips": [
+            {
+              "IP": "178.132.81.249",
+              "Bytes": 47186927
+            },
+            {
+              "IP": "45.57.81.147",
+              "Bytes": 45556635
+            },
+            {
+              "IP": "45.57.80.131",
+              "Bytes": 39289496
+            }
+          ]
+        },
+        "speedtest": {
+          "status": "SUCCESS",
+          "peak_mbps": 114.097496,
+          "avg_mbps": 114.097496,
+          "upload_mbps": 114.02168,
+          "server_name": "Fiberx IQ (Iraq)",
+          "server_ip": "eitis.cloudns.nz",
+          "client_ip": "188.72.40.147"
+        },
+        "youtube": {
+          "status": "SUCCESS",
+          "peak_mbps": 114.899368,
+          "avg_mbps": 112.82892571428572,
+          "top_ips": [
+            {
+              "IP": "188.72.30.12",
+              "Bytes": 211703515
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package_name": "Hero Plus",
+      "interface_name": "5-Profile-hero-plus",
+      "order": 5,
+      "advertised_speed_mbps": 160,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 7.0718836,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": {
+          "status": "SUCCESS",
+          "peak_mbps": 180.990976,
+          "avg_mbps": 142.88162133333336,
+          "top_ips": [
+            {
+              "IP": "91.189.91.107",
+              "Bytes": 241573824
+            },
+            {
+              "IP": "141.95.207.211",
+              "Bytes": 26353600
+            }
+          ]
+        },
+        "facebook": {
+          "status": "SUCCESS",
+          "peak_mbps": 152.649688,
+          "avg_mbps": 149.94409542857142,
+          "top_ips": [
+            {
+              "IP": "185.124.151.18",
+              "Bytes": 281354024
+            }
+          ]
+        },
+        "fast": {
+          "status": "SUCCESS",
+          "peak_mbps": 119.300888,
+          "avg_mbps": 90.97166571428572,
+          "top_ips": [
+            {
+              "IP": "45.57.80.132",
+              "Bytes": 46352158
+            },
+            {
+              "IP": "178.132.81.249",
+              "Bytes": 46251951
+            },
+            {
+              "IP": "45.57.81.134",
+              "Bytes": 41194121
+            }
+          ]
+        },
+        "speedtest": {
+          "status": "SUCCESS",
+          "peak_mbps": 152.390216,
+          "avg_mbps": 152.390216,
+          "upload_mbps": 156.81412,
+          "server_name": "Fiberx IQ (Iraq)",
+          "server_ip": "eitis.cloudns.nz",
+          "client_ip": "188.72.40.143"
+        },
+        "youtube": {
+          "status": "SUCCESS",
+          "peak_mbps": 153.106056,
+          "avg_mbps": 150.50808857142857,
+          "top_ips": [
+            {
+              "IP": "188.72.30.12",
+              "Bytes": 282455067
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package_name": "Pasha 200",
+      "interface_name": "6-Profile - Pasha-200",
+      "order": 6,
+      "advertised_speed_mbps": 200,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 7.0679839,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": {
+          "status": "SUCCESS",
+          "peak_mbps": 219.07968,
+          "avg_mbps": 175.0667337142857,
+          "top_ips": [
+            {
+              "IP": "91.189.91.108",
+              "Bytes": 296669824
+            },
+            {
+              "IP": "141.95.207.211",
+              "Bytes": 33791936
+            }
+          ]
+        },
+        "facebook": {
+          "status": "SUCCESS",
+          "peak_mbps": 190.890944,
+          "avg_mbps": 187.7613108571429,
+          "top_ips": [
+            {
+              "IP": "185.124.151.18",
+              "Bytes": 352059423
+            }
+          ]
+        },
+        "fast": {
+          "status": "FAILED",
+          "error": "API negotiation failed: Get \"https://fast.com\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
+        },
+        "speedtest": {
+          "status": "SUCCESS",
+          "peak_mbps": 190.205448,
+          "avg_mbps": 190.205448,
+          "upload_mbps": 199.702248,
+          "server_name": "Fiberx IQ (Iraq)",
+          "server_ip": "eitis.cloudns.nz",
+          "client_ip": "188.72.40.104"
+        },
+        "youtube": {
+          "status": "FAILED",
+          "error": "metadata fetch failed: login required to confirm your age"
+        }
+      }
+    },
+    {
+      "package_name": "Pasha 300",
+      "interface_name": "7-Profile - Pasha-300",
+      "order": 7,
+      "advertised_speed_mbps": 300,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 7.0816157,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": {
+          "status": "SUCCESS",
+          "peak_mbps": 302.252032,
+          "avg_mbps": 268.159232,
+          "top_ips": [
+            {
+              "IP": "185.125.190.40",
+              "Bytes": 481443840
+            },
+            {
+              "IP": "141.95.207.211",
+              "Bytes": 23125952
+            }
+          ]
+        },
+        "facebook": {
+          "status": "SUCCESS",
+          "peak_mbps": 287.40612,
+          "avg_mbps": 282.6103222857143,
+          "top_ips": [
+            {
+              "IP": "185.124.151.18",
+              "Bytes": 530298869
+            }
+          ]
+        },
+        "fast": {
+          "status": "SUCCESS",
+          "peak_mbps": 120.495952,
+          "avg_mbps": 97.91502228571429,
+          "top_ips": [
+            {
+              "IP": "45.57.80.150",
+              "Bytes": 51304940
+            },
+            {
+              "IP": "45.57.81.140",
+              "Bytes": 47540285
+            },
+            {
+              "IP": "178.132.81.249",
+              "Bytes": 44106726
+            }
+          ]
+        },
+        "speedtest": {
+          "status": "SUCCESS",
+          "peak_mbps": 285.27172,
+          "avg_mbps": 285.27172,
+          "upload_mbps": 290.767232,
+          "server_name": "Fiberx IQ (Iraq)",
+          "server_ip": "eitis.cloudns.nz",
+          "client_ip": "188.72.40.137"
+        },
+        "youtube": {
+          "status": "FAILED",
+          "error": "metadata fetch failed: Get \"https://www.youtube.com\": unexpected EOF"
+        }
+      }
+    },
+    {
+      "package_name": "Pasha 400",
+      "interface_name": "8-Profile - Pasha-400",
+      "order": 8,
+      "advertised_speed_mbps": 400,
+      "connection": {
+        "status": "CONNECTED",
+        "time_to_connect_seconds": 7.0811399,
+        "assigned_ip": "10.182.0.1"
+      },
+      "tests": {
+        "download": {
+          "status": "SUCCESS",
+          "peak_mbps": 399.11424,
+          "avg_mbps": 352.0359497142858,
+          "top_ips": [
+            {
+              "IP": "185.125.190.37",
+              "Bytes": 634535936
+            },
+            {
+              "IP": "141.95.207.211",
+              "Bytes": 27746240
+            }
+          ]
+        },
+        "facebook": {
+          "status": "SUCCESS",
+          "peak_mbps": 381.632304,
+          "avg_mbps": 376.9122634285714,
+          "top_ips": [
+            {
+              "IP": "185.124.151.18",
+              "Bytes": 706746951
+            }
+          ]
+        },
+        "fast": {
+          "status": "SUCCESS",
+          "peak_mbps": 114.688,
+          "avg_mbps": 92.28562571428571,
+          "top_ips": [
+            {
+              "IP": "178.132.81.249",
+              "Bytes": 45274889
+            },
+            {
+              "IP": "45.57.81.147",
+              "Bytes": 44561054
+            },
+            {
+              "IP": "45.57.80.137",
+              "Bytes": 43060239
+            }
+          ]
+        },
+        "speedtest": {
+          "status": "SUCCESS",
+          "peak_mbps": 380.667456,
+          "avg_mbps": 380.667456,
+          "upload_mbps": 405.353704,
+          "server_name": "Fiberx IQ (Iraq)",
+          "server_ip": "eitis.cloudns.nz",
+          "client_ip": "188.72.40.131"
+        },
+        "youtube": {
+          "status": "SUCCESS",
+          "peak_mbps": 381.275992,
+          "avg_mbps": 378.1783308571429,
+          "top_ips": [
+            {
+              "IP": "188.72.30.12",
+              "Bytes": 709341647
+            }
+          ]
+        }
+      }
+    },
+    {
+      "package_name": "B to G",
+      "interface_name": "B to G",
+      "order": 9,
+      "advertised_speed_mbps": 20,
+      "connection": {
+        "status": "FAILED",
+        "time_to_connect_seconds": 8.0259383,
+        "error": "PPPoE status=connected but ping to 8.8.8.8 failed: 100% packet loss pinging 8.8.8.8"
+      },
+      "tests": {
+        "download": {
+          "status": "SKIPPED",
+          "error": "PPPoE status=connected but ping to 8.8.8.8 failed: 100% packet loss pinging 8.8.8.8"
+        },
+        "facebook": {
+          "status": "SKIPPED",
+          "error": "PPPoE status=connected but ping to 8.8.8.8 failed: 100% packet loss pinging 8.8.8.8"
+        },
+        "fast": {
+          "status": "SKIPPED",
+          "error": "PPPoE status=connected but ping to 8.8.8.8 failed: 100% packet loss pinging 8.8.8.8"
+        },
+        "speedtest": {
+          "status": "SKIPPED",
+          "error": "PPPoE status=connected but ping to 8.8.8.8 failed: 100% packet loss pinging 8.8.8.8"
+        },
+        "youtube": {
+          "status": "SKIPPED",
+          "error": "PPPoE status=connected but ping to 8.8.8.8 failed: 100% packet loss pinging 8.8.8.8"
+        }
+      }
+    }
+  ]
+}
