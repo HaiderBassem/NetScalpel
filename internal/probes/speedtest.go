@@ -4,7 +4,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"os"
 	"os/exec"
+	"path/filepath"
 
 	"netscalpel/internal/config"
 	"netscalpel/internal/engine"
@@ -45,7 +47,10 @@ func RunSpeedtest(cfg config.SpeedtestConfig) engine.ProbeResult {
 		fmt.Println("[INFO] No server ID set — auto-selecting nearest server.")
 	}
 
-	cmd := exec.Command("speedtest", args...)
+	exePath, _ := os.Executable()
+	exeDir := filepath.Dir(exePath)
+	cmdPath := filepath.Join(exeDir, "speedtest")
+	cmd := exec.Command(cmdPath, args...)
 
 	var out bytes.Buffer
 	var stderr bytes.Buffer

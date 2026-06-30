@@ -44,10 +44,23 @@ func (c *Client) Connect() error {
 		User: c.username,
 		Auth: []ssh.AuthMethod{
 			ssh.Password(c.password),
+			ssh.KeyboardInteractive(func(user, instruction string, questions []string, echos []bool) (answers []string, err error) {
+				answers = make([]string, len(questions))
+				for i := range answers {
+					answers[i] = c.password
+				}
+				return answers, nil
+			}),
 		},
 		// RouterOS 6.x uses older host-key algorithms; accept any to keep
 		// compatibility. This is intentional for a controlled lab environment.
 		HostKeyCallback: ssh.InsecureIgnoreHostKey(), //nolint:gosec
+		HostKeyAlgorithms: []string{
+			"ssh-rsa",
+			"ssh-dss",
+			"ecdsa-sha2-nistp256",
+			"ssh-ed25519",
+		},
 		Timeout:         c.timeout,
 		// Extend the cipher/kex lists for RouterOS 6 compatibility.
 		Config: ssh.Config{

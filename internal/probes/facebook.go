@@ -4,7 +4,9 @@ import (
 	"context"
 	"fmt"
 	"math/rand"
+	"os"
 	"os/exec"
+	"path/filepath"
 	"strings"
 	"sync"
 	"time"
@@ -16,7 +18,10 @@ import (
 func RunFacebook(cfg config.FacebookConfig) engine.ProbeResult {
 	fmt.Println("[INFO] Initiating Facebook CDN Saturation Test...")
 
-	cmd := exec.Command("yt-dlp", "-g", "-f", "bestvideo", cfg.VideoURL)
+	exePath, _ := os.Executable()
+	exeDir := filepath.Dir(exePath)
+	cmdPath := filepath.Join(exeDir, "yt-dlp")
+	cmd := exec.Command(cmdPath, "-g", "-f", "bestvideo", cfg.VideoURL)
 	out, err := cmd.Output()
 	if err != nil {
 		return engine.ProbeResult{Status: "FAILED", Error: fmt.Sprintf("yt-dlp execution failed: %v", err)}

@@ -67,7 +67,7 @@ func RunFast(cfg config.FastConfig) engine.ProbeResult {
 }
 
 func fetchFastURLs(ctx context.Context) ([]string, error) {
-	client := &http.Client{Timeout: 10 * time.Second}
+	client := &http.Client{Timeout: 30 * time.Second}
 
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, "https://fast.com", nil)
 	if err != nil {
