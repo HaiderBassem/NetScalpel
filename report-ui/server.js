@@ -10,6 +10,12 @@ app.use(express.static(path.join(__dirname, 'dist')));
 // Serve the public folder explicitly (optional but good practice for external JSON files)
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Serve results.json directly from the parent directory
+app.get('/results.json', (req, res) => {
+  const resultsPath = path.resolve(__dirname, '../results.json');
+  res.sendFile(resultsPath);
+});
+
 // Handles any requests that don't match the ones above
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
