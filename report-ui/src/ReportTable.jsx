@@ -9,7 +9,7 @@ const ReportTable = ({ data }) => {
 
   // Row definitions - simple and clean
   const rowConfig = [
-    { label: 'Public IP', getValue: p => p.connection?.assigned_ip || 'Check it' },
+    { label: 'Speed Test IP', getValue: p => p.tests?.speedtest?.client_ip || 'Check it' },
     { label: 'Download', getValue: p => formatSpeed(p.tests?.download) },
     { label: 'Facebook', getValue: p => formatSpeed(p.tests?.facebook) },
     { label: 'Facebook IP', getValue: p => getTopIp(p.tests?.facebook) },
